@@ -1,0 +1,325 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html
+{
+
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+body{
+	background-color:#121421;
+
+}
+.caption
+{
+	font-family: 'Courgette', cursive;
+	font-size:15px;
+	margin:20px;
+	color:white;
+
+}
+.caption .s1{
+	color:crimson;
+}
+a
+{
+	text-decoration: none;
+	color:#eee;
+}
+header
+{
+	
+	width:100%;
+	background-size:cover;
+	
+}
+.band
+{
+	font-weight:100;
+	font-size:35px;
+	color:white;
+	font-family: 'Cinzel', serif;
+	transform:translateX(100rem);
+	animation: slideIn .5s forwards;	
+}
+.container
+{
+	transform:translateX(100rem);
+	animation: slideIn .5s forwards;
+	max-width: 150rem;
+	width:90%;
+	margin: 0 auto;
+
+}
+nav{
+	padding-top: 3rem;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	text-transform:uppercase;
+	font-size:1.6rem;
+	
+}
+nav ul{
+	display:flex;
+}
+nav ul li{
+	list-style:none;
+	transform:translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	margin: 0 3rem;
+	position: relative;
+	letter-spacing:2px;
+}
+nav ul li a: last-child{
+	margin-right:0;
+}
+nav ul li a::before,
+nav ul li a::after{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:2px;
+	background-color:crimson;
+	left:0;
+	transform:scaleX(0);
+	transition: all .5s;
+}
+nav ul li a:before{
+	top:0;
+	transform-origin:left;
+	
+}
+nav ul li a:after{
+	bottom:0;
+	transform-origin:right;
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform:scaleX(1);
+}
+@keyframes slideIn{
+	
+	from{
+		
+	}
+	to{
+		transform: translateX(0);
+	}	
+}
+.logo
+{
+	width:50%;
+	margin-left:5%;
+	margin-top:5%;
+}
+.logo .band
+{
+	font-weight:100;
+	font-size:35px;
+	color:white;
+	font-family: 'Cinzel', serif;
+}
+.logo .band span
+{
+	color:crimson;
+}
+.caption
+{
+	font-family: 'Courgette', cursive;
+	font-size:15px;
+	margin:20px;
+	color:white;
+
+}
+.caption .s1{
+	color:crimson;
+}
+
+.title p{
+	font-family: 'Cinzel', serif;
+	font-size:36px;
+	color:white;
+	margin-left:52%;
+	margin-top:6%;
+	font-weight:800;
+}
+.info i{
+	padding-right:8px;
+	margin-left:5px;
+	margin-top:9px;
+}
+.input input{
+	outline:none;
+	width:65%;
+	background:transparent;
+	border:none;
+	border-bottom:1px solid #555;
+	padding-bottom:12px;
+	color:white;
+	transition:border-bottom 0.3s;
+	margin-left:8%;
+}
+.input input:focus{
+	border-bottom:1px solid crimson;
+}
+textarea{
+	background:transparent;
+	border:none;
+	border-bottom:1px solid #555;
+	outline:none;
+	transition:border-bottom 0.3s;
+	color:white;
+	margin-left:8%;
+}
+textarea:focus{
+border-bottom:1px solid crimson;	
+}
+button{
+	background:transparent;
+	border:1.5px solid #555;
+    border-radius:9px;
+	font-size:13px;
+	padding:18px;
+	color:silver;
+	transition:background 0.3s;
+	margin-left:8%;
+}
+button:hover{
+	background:crimson;
+	cursor:pointer;
+}
+
+.foot{
+	width:100%;
+	height:30%;
+	background:#cc0066;
+	display:inline-block;
+}
+.social-icons
+{
+	margin-top:50px;
+	position:relative;
+	margin-left:-100px;
+	text-align:center;
+}
+ .social-icons a
+{
+	display:inline-block;
+	width:46px;
+	height:46px;
+	background:#262626;
+	text-align:center;
+	color:#fff;
+	text-decoration:none;
+	transition:0.5s;
+	padding:2px 5px;
+	border-radius:50%;
+}
+.social-icons a i
+{	
+	font-size:25px;
+}
+.social-icons a .fa
+{
+	line-height:36px;
+	
+}
+.social-icons a:hover
+{
+	background:#e91e63;
+}
+.link
+{
+	width:100%;
+	margin-top:3%;
+	margin-left:1%;
+}
+.link span{
+	color:white;
+	font-size:15px;
+	float:left;
+}
+.link a{
+	transition:color 0.3s;
+}
+.link a:hover{
+	color:blue;
+}
+.contacts{
+
+display:inline;
+float:right;
+margin-right:2%;
+}
+.contacts span{
+	color:white;
+	font-size:19px;
+	font-family:sans;
+
+}
+select option{
+	background-color:#121421;
+}
+table button{
+	outline:none;
+}
+.item{
+	width:36%;
+	height:65%;
+	margin-left:12%;
+	margin-top:8%;
+	float:left;
+	margin-bottom:55px;
+}
+.itemdesc{
+	float:left;
+	margin-left:4%;
+	margin-top:8%;
+	width:30%;
+	height:50%;
+	color:white;
+}
+.itemname{
+	width:100%;
+	color:white;
+	font-size:32.5px;
+}
+.itemprice{
+	color:crimson;
+	font-size:25px;
+	margin-top:4.5%;
+}
+.itemabout{
+	color:silver;
+	opacity:0.45;
+	font-size:17px;
+	margin-top:5%;
+	width:100%;
+	line-height:1.6;
+}
+.proceed{
+	width:100%;
+	margin-top:8%;
+	margin-left:-8%;
+}
+.proceed button{
+	width:100%;
+	height:15%;
+	font-size:21px;
+}
+.catogary{
+	margin-top:5%;
+}
+.contain{
+	display:block;
+	width:100%;
+	height:50%;
+}

@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<link href="css/styles.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery.min.js"></script>  
+<script src="js/musicplayer.js"></script>
+
+</head>
+	<body>
+		<div class="example">
+  <ul class="playlist">
+
+    <li data-cover="cover-1.jpg" data-artist="Artist-1">
+      <a href="1.mp3">Music 1</a>
+    </li>
+    
+    <li data-cover="cover-2.jpg" data-artist="Artist-2">
+      <a href="2.mp3">Music 2</a>
+    </li>
+
+    <li data-cover="cover-3.jpg" data-artist="Artist-3">
+      <a href="3.mp3">Music 1</a>
+    </li>
+
+    ...
+
+  </ul>
+</div>
+	</body>
+	
+<script>
+$(".example").musicPlayer({
+  autoPlay: false , 
+  volume: 80, 
+  loop: false, 
+  timeSeparator: ' / ',
+  playerAbovePlaylist: true,  
+  infoElements: ['title' , 'artist'] , 
+  elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'],  
+  timeElements: ['current', 'duration'],  
+  controlElements: ['backward', 'play', 'forward', 'stop'], 
+});
+
+$(".example").musicPlayer({
+  onLoad: function() {}, 
+  onPlay: function() {}, 
+  onPause: function() {}, 
+  onStop: function() {}, 
+  onFwd: function() {}, 
+  onRew: function() {}, 
+  volumeChanged: function() {}, 
+  progressChanged: function() {} , 
+  trackClicked: function() {},
+  onMute: function() {}
+});
+</script>	
+</html>
